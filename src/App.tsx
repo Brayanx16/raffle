@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { RecoilRoot } from "recoil";
 import Form from "./components/Form";
+import { RecoilRoot } from "recoil";
 
 function App() {
   return (

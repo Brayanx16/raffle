@@ -1,6 +1,6 @@
+import { useAddParticipant } from "../../state/hooks/useAddParticipant";
+import { useMsgErro } from "../../state/hooks/useMsgErro";
 import { useRef, useState } from "react";
-import { useAddParticipant } from "../state/hooks/useAddParticipant";
-import { useMsgErro } from "../state/hooks/useMsgErro";
 
 const Form = () => {
   const [name, setName] = useState("");
