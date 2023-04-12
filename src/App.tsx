@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Form from "./components/Form";
+import Settings from "./pages/Settings";
 import { RecoilRoot } from "recoil";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <BrowserRouter>
       <RecoilRoot>
         <Routes>
-          <Route path="/" element={Form}></Route>
+          <Route path="/" element={Settings}></Route>
         </Routes>
       </RecoilRoot>
     </BrowserRouter>
