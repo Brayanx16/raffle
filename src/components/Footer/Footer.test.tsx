@@ -4,9 +4,14 @@ import { RecoilRoot } from "recoil";
 import Footer from "./index";
 
 const mockNavigation = jest.fn();
+const mockRuffle = jest.fn();
 
 jest.mock("../../state/hooks/useListParticipant", () => {
   return { useListParticipant: jest.fn() };
+});
+
+jest.mock("../../state/hooks/useRaffle", () => {
+  return { useRaffle: () => mockRuffle };
 });
 
 jest.mock("react-router-dom", () => {
@@ -61,5 +66,6 @@ describe("When exist enough participants", () => {
 
     expect(mockNavigation).toHaveBeenCalledTimes(1);
     expect(mockNavigation).toHaveBeenCalledWith("/sorteio");
+    expect(mockRuffle).toHaveBeenCalledTimes(1);
   });
 });

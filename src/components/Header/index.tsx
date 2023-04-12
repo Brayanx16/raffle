@@ -1,4 +1,4 @@
-import "./style.css";
+import "./styles.css";
 
 const Header = () => {
   return (
@@ -6,7 +6,7 @@ const Header = () => {
       <div className="img-logo" role="img" aria-label="Logo do Sorteador"></div>
       <img
         className="participant"
-        src="/imagens/participante.png"
+        src="/images/participante.png"
         alt="Participante com um presente na mão"
       />
     </header>
